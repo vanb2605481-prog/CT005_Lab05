@@ -82,4 +82,220 @@
     </footer>
 
 </body>
+</html>```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Thông tin cá nhân - Lab05</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #243447;
+            background: linear-gradient(135deg, #eaf4ff, #f8fbff);
+        }
+
+        .container {
+            width: min(1100px, 92%);
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+            background: linear-gradient(135deg, #1769aa, #2196f3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: clamp(28px, 5vw, 42px);
+        }
+
+        header p {
+            font-size: 17px;
+            opacity: 0.95;
+        }
+
+        main {
+            padding: 35px 0;
+        }
+
+        .profile-card,
+        .content-card {
+            margin-bottom: 28px;
+            padding: 28px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(31, 78, 121, 0.12);
+        }
+
+        .profile-card h2,
+        .content-card h2 {
+            margin-bottom: 20px;
+            color: #1769aa;
+            border-left: 5px solid #2196f3;
+            padding-left: 12px;
+        }
+
+        .profile-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .info-item {
+            padding: 18px;
+            background-color: #f2f8ff;
+            border-radius: 10px;
+            border: 1px solid #d8eaff;
+        }
+
+        .info-item strong {
+            display: block;
+            margin-bottom: 6px;
+            color: #1769aa;
+        }
+
+        .media-wrapper {
+            overflow: hidden;
+            text-align: center;
+            border-radius: 12px;
+            background-color: #f5f9fd;
+        }
+
+        .media-wrapper img {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        .pdf-frame,
+        .youtube-frame {
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: 12px;
+        }
+
+        .pdf-frame {
+            height: 600px;
+        }
+
+        .youtube-frame {
+            aspect-ratio: 16 / 9;
+            height: auto;
+        }
+
+        footer {
+            padding: 25px 20px;
+            text-align: center;
+            color: white;
+            background-color: #12344d;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .profile-info {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card,
+            .content-card {
+                padding: 20px;
+            }
+
+            .pdf-frame {
+                height: 450px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Trang thông tin cá nhân</h1>
+            <p>Giới thiệu thông tin cá nhân và các sản phẩm thực hành Lab05</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="profile-card">
+            <h2>Thông tin cá nhân</h2>
+
+            <div class="profile-info">
+                <div class="info-item">
+                    <strong>Họ và tên</strong>
+                    <span>Nguyễn Trần Khánh Vân</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Mã số sinh viên</strong>
+                    <span>B2605481</span>
+                </div>
+
+                <div class="info-item">
+                    <strong>Lớp học phần</strong>
+                    <span>CT005/D05-Nền tảng công nghệ số</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>Sản phẩm 1: Hình ảnh Infographic</h2>
+
+            <div class="media-wrapper">
+                <img
+                    src="Lab05_Ex2.1.png"
+                    alt="Infographic Lab05"
+                >
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>Sản phẩm 2: Báo cáo PDF</h2>
+
+            <iframe
+                src="Lab05_Ex1.2.pdf"
+                width="100%"
+                height="600px"
+                class="pdf-frame"
+                title="Báo cáo Lab05 dạng PDF">
+            </iframe>
+        </section>
+
+        <section class="content-card">
+            <h2>Sản phẩm 3: Video YouTube</h2>
+
+            <iframe
+                class="youtube-frame"
+                src="https://www.youtube.com/embed/jLaSCiODG40"
+                title="Video YouTube Lab05"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về sinh viên thực hiện.</p>
+        <p>Trang web được khởi tạo với sự hỗ trợ của GitHub Copilot</p>
+    </footer>
+</body>
 </html>
