@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - Bài tập 3.1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .media-section {
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        footer {
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trang Web Hiển Thị Nội Dung Số Đa Phương Tiện</h1>
+        <p>Trang web tổng hợp hình ảnh Infographic và Video bài giảng từ Nhiệm vụ 2.</p>
+    </header>
+
+    <main>
+        <section class="media-section">
+            <h2>1. Infographic Tổng Quan</h2>
+            <p>Hình ảnh Infographic nội dung bài tập:</p>
+            <img src="Lab05_Ex2.1.png" alt="Infographic Bài tập 2.1">
+        </section>
+
+        <section class="media-section">
+            <h2>2. Video Hướng Dẫn</h2>
+            <p>Video minh họa phát trực tiếp từ YouTube:</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/jLaSCiODG40" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Thực hiện bởi Học viên.</p>
+        <p><em>Ghi chú: Mã nguồn HTML này được khởi tạo với sự hỗ trợ của GitHub Copilot.</em></p>
+    </footer>
+
+</body>
+</html>
